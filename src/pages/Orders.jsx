@@ -3,12 +3,40 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Context
 
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
+import { addUser, getAllUsers } from '../indexeddb/store';
+import { useState, useEffect } from 'react';
 
 const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
+
+  
+    const [users, setUsers] = useState([]);
+  
+  useEffect(() => {
+    (async () => {
+
+  
+      const allUsers = await getAllUsers();
+      setUsers(allUsers);
+      console.log(allUsers);
+  
+    })();
+  }, []);
+  
+  
+
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <ul>
+        {users.map((user) => (<li>{user.name}</li>))}
+
+      </ul>
       <Header category="Page" title="Orders" />
+      <ul>
+        {users.map((user) => (<li>{user.name}</li>))}
+
+      </ul>
+
       <GridComponent
         id="gridcomp"
         dataSource={ordersData}

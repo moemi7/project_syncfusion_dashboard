@@ -471,7 +471,7 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: 'ⴰⵅⵅⴰⵎ',
     links: [
       {
         name: 'ecommerce',
@@ -481,24 +481,24 @@ export const links = [
   },
 
   {
-    title: 'Pages',
+    title: 'ⵉⴱⴻⵔⴽⴰⵏⴻⵏ',
     links: [
       {
-        name: 'orders',
+        name: 'hollanda',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'nador',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: 'tanger',
         icon: <RiContactsLine />,
       },
     ],
   },
   {
-    title: 'Apps',
+    title: 'ⵉⵃⵡⴰⵍⴻⵏ',
     links: [
       {
         name: 'calendar',
@@ -519,10 +519,10 @@ export const links = [
     ],
   },
   {
-    title: 'Charts',
+    title: 'ⵜⴰⵎⵍⵉⵍⵉⵜ ⵏ ⵓⵙⵏⴰⵙ',
     links: [
       {
-        name: 'line',
+        name: 'ⵉⴱⴻⵔⵔⴻⵏ',
         icon: <AiOutlineStock />,
       },
       {

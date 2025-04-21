@@ -1,7 +1,7 @@
-# Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More
-![Shoppy](https://i.ibb.co/W6g39w3/image.png)
-
-## Introduction
-This is a code repository for the corresponding video tutorial.
-
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
+Groei van een simpele herder uit tot de grootste patron van de rif
+- Boerderij, bouw je boerderij op en maak heg levendig met dieren en fruit
+- Werknemers, neem igdamen aan en blijf met ze in contact via chat
+- Studeer, en word een ingenieur om wegen en bruggen aan te leggen op je land
+- Handel, stuur igdamen op pad om je fruit en groente te verkopen op de markt
+- Auto's, zorg voor de dikste auto om indruk te maken op je cirkel
+ 

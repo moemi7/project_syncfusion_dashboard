@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Ecommerce, Hollanda, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -22,9 +22,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className={currentMode === 'Dark' ? 'dark' : ''}>
+    <div className="bg-[#3B2B1B]">
       <BrowserRouter>
-        <div className="flex relative dark:bg-main-dark-bg">
+        <div  className="flex relative bg-[#3B2B1B] dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
               content="Settings"
@@ -42,7 +42,7 @@ const App = () => {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-[#3B2B1B] ">
               <Sidebar />
             </div>
           ) : (
@@ -57,7 +57,7 @@ const App = () => {
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }
           >
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+            <div className="fixed md:static bg-[#3B2B1B] dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
             </div>
             <div>
@@ -72,6 +72,9 @@ const App = () => {
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
+                <Route path="/hollanda" element={<Hollanda />} />
+                <Route path="/nador" element={<Customers />} />
+                <Route path="/tanger" element={<Customers />} />
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />
